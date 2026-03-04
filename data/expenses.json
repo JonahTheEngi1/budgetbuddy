@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Hulu + Disney",
+    "cost": 19.99,
+    "category": "Streaming",
+    "date": 5,
+    "isVariable": false,
+    "id": "a8f310aa-4cb7-4597-b490-19b2ae300f8d"
+  },
+  {
+    "name": "Puppy Insurance",
+    "cost": 74,
+    "category": "Insurance",
+    "date": 9,
+    "isVariable": false,
+    "id": "c5250fe8-3f49-45e5-9104-033c90d7f2f6"
+  },
+  {
+    "name": "Discord",
+    "cost": 10,
+    "category": "Subscriptions",
+    "date": 6,
+    "isVariable": false,
+    "id": "4c10636f-6a06-473f-96b0-dc5f077e1ebe"
+  },
+  {
+    "name": "Groceries",
+    "cost": 400,
+    "category": "Groceries",
+    "date": 31,
+    "isVariable": true,
+    "id": "43a5023e-246d-4555-9a61-b55d272f7a06"
+  },
+  {
+    "name": "Fun Money",
+    "cost": 300,
+    "category": "Fun Money",
+    "date": 31,
+    "isVariable": true,
+    "id": "fe16e523-cbfb-47a6-bcf8-eb706e999e19"
+  },
+  {
+    "name": "Puppy Day Care",
+    "cost": 620,
+    "category": "Other",
+    "date": 31,
+    "isVariable": false,
+    "id": "9889fd73-9d42-4f4b-abfc-d249d6edea25"
+  }
+]

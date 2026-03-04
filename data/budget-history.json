@@ -1,0 +1,57 @@
+[
+  {
+    "month": "2026-03",
+    "income": 3000,
+    "entries": [
+      {
+        "id": "b3a",
+        "name": "Rent",
+        "cost": 1500,
+        "category": "Rent",
+        "date": "2026-03-01"
+      },
+      {
+        "id": "b3b",
+        "name": "Netflix",
+        "cost": 15.99,
+        "category": "Streaming",
+        "date": "2026-03-05"
+      },
+      {
+        "id": "b3c",
+        "name": "Spotify",
+        "cost": 10.99,
+        "category": "Streaming",
+        "date": "2026-03-05"
+      },
+      {
+        "id": "b3d",
+        "name": "Car Insurance",
+        "cost": 180,
+        "category": "Insurance",
+        "date": "2026-03-15"
+      },
+      {
+        "id": "b3e",
+        "name": "Electric",
+        "cost": 120,
+        "category": "Utilities",
+        "date": "2026-03-20"
+      },
+      {
+        "id": "b3f",
+        "name": "Phone Plan",
+        "cost": 65,
+        "category": "Phone",
+        "date": "2026-03-12"
+      },
+      {
+        "id": "b3g",
+        "name": "Internet",
+        "cost": 70,
+        "category": "Internet",
+        "date": "2026-03-10"
+      }
+    ]
+  }
+]
