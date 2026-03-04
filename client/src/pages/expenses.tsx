@@ -191,7 +191,7 @@ export default function ExpensesPage() {
           </DialogTrigger>
           <DialogContent>
             <DialogHeader>
-              <DialogTitle>{editingId ? "Edit Expense" : "Add Expense"}</DialogTitle>
+              <DialogTitle>{editingId ? "Edit Expense" : form.isVariable ? "Add Variable Expense" : "Add Expense"}</DialogTitle>
             </DialogHeader>
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
@@ -251,9 +251,24 @@ export default function ExpensesPage() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between gap-1 pb-4">
             <CardTitle className="text-base">Variable Spending</CardTitle>
-            <Badge variant="secondary" data-testid="text-variable-summary">
-              {formatCurrency(totalVariableActual)} / {formatCurrency(totalVariableBudget)} budget
-            </Badge>
+            <div className="flex items-center gap-2">
+              <Badge variant="secondary" data-testid="text-variable-summary">
+                {formatCurrency(totalVariableActual)} / {formatCurrency(totalVariableBudget)} budget
+              </Badge>
+              <Button
+                size="sm"
+                variant="outline"
+                onClick={() => {
+                  setEditingId(null);
+                  setForm({ name: "", cost: 0, category: "", date: 31, isVariable: true });
+                  setOpen(true);
+                }}
+                data-testid="button-add-variable"
+              >
+                <Plus className="w-3.5 h-3.5 mr-1" />
+                Add Variable
+              </Button>
+            </div>
           </CardHeader>
           <CardContent className="space-y-4">
             {variableExpenses.length > 0 ? variableExpenses.map((expense) => {
